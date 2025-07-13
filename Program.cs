@@ -23,7 +23,6 @@
             
             people.Add(new Admin { firstName = "Bob", lastName = "Brown", Age = 40, Role = "Coordinator" });
             
-
             foreach (var person in people)
             {
                 Console.WriteLine(person.GetDetails());
