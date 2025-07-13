@@ -20,33 +20,12 @@ namespace solv_assignment_session_OOP03
     */
     internal class Person
     {
-        private string firstName;
-        private string lastName;
-        private int age;
-        public string FirstName
-        {
-            get { return firstName; }
-            set { firstName = value; }
-        }
-        public string LastName
-        {
-            get { return lastName; }
-            set { lastName = value; }
-        }
-        public int Age
-        {
-            get { return age; }
-            set { age = value; }
-        }
-        public Person(string _firstName, string _lastName, int _age)
-        {
-            firstName = _firstName;
-            lastName = _lastName;
-            age = _age;
-        }
+        public int age { get; set; }
+        public string? firstName { get; set; }
+        public string? lastName { get; set; }
         public virtual string GetDetails()
         {
-            return $"{FirstName} {LastName}, Age: {Age}";
+            return $"Name: {firstName} {lastName}, Age: {age}";
         }
     }
 }

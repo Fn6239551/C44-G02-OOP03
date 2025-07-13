@@ -14,20 +14,19 @@
         */
         static void Main(string[] args)
         {
-             List<Person> people = new List<Person>();
+            List<Person> people = new List<Person>();
+            
+            people.Add(new Student { firstName = "John", lastName = "Doe", age = 20, GradeLevel = "Sophomore" });
+            people.Add(new Student { firstName = "Jane", lastName = "Smith", age = 22, GradeLevel = "Senior" });
+        
+            people.Add(new Teacher { firstName = "Alice", lastName = "Johnson", age = 35, Subject = "Mathematics" });
            
-            people.Add(new Student { FirstName = "John", LastName = "Doe", Age = 17, GradeLevel = "Grade 11" });
-            people.Add(new Student { FirstName = "Jane", LastName = "Smith", Age = 22, GradeLevel = "Senior" });
-            
-            people.Add(new Teacher { FirstName = "Alice", LastName = "Johnson", Age = 35, Subject = "Mathematics" });
-            
-            people.Add(new Admin { FirstName = "Bob", LastName = "Brown", Age = 40, Role = "Coordinator" });
-            
+            people.Add(new Admin { firstName = "Bob", lastName = "Brown", age = 40, Role = "Coordinator" });
+          
             foreach (var person in people)
             {
                 Console.WriteLine(person.GetDetails());
             }
-
         }
     }
 }

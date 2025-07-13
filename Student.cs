@@ -14,6 +14,7 @@ namespace solv_assignment_session_OOP03
      */
     internal class Student: Person
     {
+       
         public string? GradeLevel { get; set; }
         public override string GetDetails()
         {

@@ -14,8 +14,8 @@ namespace solv_assignment_session_OOP03
      */
     internal class Teacher: Person
     {
+       
         public string? Subject { get; set; }
-        
         public override string GetDetails()
         {
             return $"{base.GetDetails()}, Subject: {Subject}";
